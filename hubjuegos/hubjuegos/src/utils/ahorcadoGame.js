@@ -82,7 +82,7 @@ export const click_letras = (event) => {
   } else if (
     getInfoAhorcado().cant_aciertos == getInfoAhorcado().palabrita.length
   ) {
-    id("resultado").innerHTML = "¡Enhorabuena, te hiciste con TODOS! ";
+    id("resultado").innerHTML = "¡Enhorabuena, Pokemoon atrapado! ";
     game_over();
   }
   console.log(
