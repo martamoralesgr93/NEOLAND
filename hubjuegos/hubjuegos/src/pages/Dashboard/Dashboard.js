@@ -31,9 +31,7 @@ const template = () =>
 ;
 
 const addEventListeners = () => {
-  // le damos el evento al boton de pokemon que es la unica pagina de contenido por
-   
-//ahora esta creada en el proyecto*
+  // le damos el evento al boton de pokemon que es la unica pagina de contenido *
 const navigatePokemon = document.getElementById("navigatePokemon");
 navigatePokemon.addEventListener("click", () => {
   initControler("Pokemon");});
@@ -53,7 +51,7 @@ export const printTemplateDashboard = () => {
 
   document.querySelector("nav").style.display = "flex";
 
-  // metemos los escuchadores de la pagina */
+  // escuchadores de la pagina */
   addEventListeners();
   getInfo();
 };

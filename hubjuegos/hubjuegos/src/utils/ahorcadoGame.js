@@ -77,7 +77,7 @@ export const click_letras = (event) => {
 
   if (getInfoAhorcado().cant_errores == 7) {
     id("resultado").innerHTML =
-      "Perdiste, la palabra era " + getInfoAhorcado().palabrita;
+      "Perdiste, el pokemoon era " + getInfoAhorcado().palabrita;
     game_over();
   } else if (
     getInfoAhorcado().cant_aciertos == getInfoAhorcado().palabrita.length
