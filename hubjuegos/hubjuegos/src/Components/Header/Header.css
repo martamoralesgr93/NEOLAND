@@ -1,0 +1,55 @@
+/* Header.css -----> src/componets/Header/Header.css */
+
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: #000000;
+    -webkit-box-shadow: 0px 8px 30px -3px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 0px 8px 30px -3px rgba(0, 0, 0, 0.61);
+    box-shadow: 0px 8px 30px -3px rgba(0, 0, 0, 0.61);
+    z-index: 100;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  
+    & nav img {
+      width: 15%;
+      margin: 0.8em;
+      transition: ease-in-out 0.3s;
+      @media (max-width: 600px) {
+        width: 40%;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    & .logo {
+      top: 10px;
+      width: 10vw;
+      height: 70%;
+      object-fit: cover;
+      
+      @media (max-width: 600px) {
+        position: relative;
+        width: 20vw;
+        height: 10vh;
+      }
+  
+      @media (min-width: 601px) {
+        object-fit: contain;
+      }
+    }
+    & nav {
+      width: 30vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+

@@ -1,0 +1,137 @@
+#palabra_a_adivinar {
+    
+    height: 3em;
+    color: rgb(190, 53, 145);
+    font-size: 1em; 
+}
+
+@media (max-width: 600px) {
+    #palabra_a_adivinar {
+        font-size: 0.5em; 
+        
+    }
+}
+
+#palabra_a_adivinar span {
+    vertical-align: bottom;
+    font-size: 2em;
+    border-bottom: 2px solid black;
+    width: 30px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+.fondo {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./public/img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    gap: 20px;
+    background-attachment: fixed;
+    flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    .fondo {
+        flex-direction: column;
+        overflow-y: auto; 
+    }
+}
+
+.button {
+    width: 50%; 
+    height: 50px;
+    display: flex;
+}
+
+#letras {
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto; 
+    margin-left: 0px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+}
+
+#letras button {
+    background-color: rgb(150, 21, 111);
+    color: white;
+    padding: 4px 0;
+    text-align: center;
+    margin: 5px;
+    flex: 0 0 calc(33.33% - 10px); 
+}
+
+
+@media (max-width: 600px) {
+    #letras {
+        max-width: none; 
+        justify-content: flex-start; 
+    }
+}
+
+.juego {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+
+  
+    @media (max-width: 600px) {
+        width: calc(100vw - 40px); 
+        margin: 0 20px; 
+    }
+}
+
+#jugar {
+    width: 20vw;
+    height: 5vh;
+    margin: center; 
+}
+
+
+@media (max-width: 600px) {
+    #jugar {
+        width: 50vw; 
+        height: 7vh; 
+        font-size: 1em; 
+    }
+}
+
+#imagen {
+    height: 60vh;
+    position: relative;
+    top: 30px;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+    
+}
+
+#palabra_a_adivinar span {
+    vertical-align: bottom;
+    font-size: 2em;
+    border-bottom: 2px solid white;
+    width: 30px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+p {
+    display: block;
+    color: white;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
